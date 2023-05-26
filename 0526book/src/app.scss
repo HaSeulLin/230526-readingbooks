@@ -1,0 +1,68 @@
+// 변수 설정
+$blue : #3C486B;
+$grey : #d1d1d1;
+$yellow : #F9D949;
+$red : #F45050;
+
+// 기본 설정
+.m-0 {margin : 0;}
+.m-1 {margin : 10px;}
+.m-2 {margin : 20px;}
+.m-a {margin : auto;}
+
+.ml-0 {margin-left : 0;}
+.ml-1 {margin-left : 10px;}
+.ml-2 {margin-left : 20px;}
+
+.p-0 {padding : 0;}
+.p-1 {padding : 10px;}
+.p-2 {padding : 20px;}
+.p-5 {padding : 50px;}
+.p-a {padding : auto;}
+
+.mtb-2 {margin-top : 20px; margin-bottom: 20px;}
+
+
+.br-2 {
+    border-radius: 20px;
+}
+
+.br-5 {
+    border-radius: 50px;
+}
+
+.br-100 {
+    border-radius: 100%;
+}
+
+
+.button {
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid $blue;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: 'SUITE-Regular';
+    font-weight: bold;
+    font-size: 0.9rem;
+
+    &:hover {
+        border: 2px solid $yellow;
+        background-color: $yellow;
+        color : $blue;
+    }
+}
+
+input {
+    border : none;
+    border-radius: 20px;
+    outline-style: none;
+    padding: 8px 10px;
+    width: 300px;
+}
+
+a {
+    text-decoration: none;
+    color : white;
+}

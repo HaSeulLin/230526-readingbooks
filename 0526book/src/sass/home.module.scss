@@ -1,0 +1,96 @@
+// 변수 설정
+$blue : #3C486B;
+$grey : #d1d1d1;
+$yellow : #F9D949;
+$red : #F45050;
+
+
+// 기본 설정
+li {
+    list-style: none;
+    border: 1px solid $grey;
+    text-align: left;
+}
+
+// class
+
+.booklist {
+    max-width: 60vw; min-width: 800px;
+}
+
+.readtop {
+    background-color: $blue;
+    color : white;
+    padding : 30px;
+}
+
+.addbook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addbtn, .searchbtn {
+    box-sizing: border-box;
+    background-color: $yellow;
+    color : $blue;
+    border: 2px solid $yellow;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: 'SUITE-Regular';
+    font-weight: bold;
+    font-size: 0.9rem;
+    &:hover {
+        background-color: transparent;
+        color: $yellow;
+        border: 2px solid $yellow;
+    }
+}
+
+.searchbook {
+    background-color: $red;
+    padding: 10px 0;
+}
+
+
+.booktag {
+    display: flex;
+    justify-content: space-between;
+}
+
+.xbutton {
+    border: none;
+    color : $blue;
+    &:hover {
+        border: none;
+        background-color: transparent;
+    }
+}
+
+.book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    box-sizing: border-box;
+    background-color: $red;
+    color : white;
+    width: 140px;
+    padding: 5px 15px;
+}
+
+.bookexplain {
+    margin: 10px 5px;
+}
+.booktitle {
+    display: flex;
+    margin: 10px 5px;
+    align-items: flex-end;
+}
+
+.booktitle h4 {
+    margin-left: 10px;
+    color : #505050;
+}
+

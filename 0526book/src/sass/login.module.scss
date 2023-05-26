@@ -1,0 +1,35 @@
+// 변수 설정
+$blue : #3C486B;
+$grey : #d1d1d1;
+$yellow : #F9D949;
+$red : #F45050;
+
+.login {
+    background-color: #3C486B;
+    color: white;
+    height: 100vh;
+}
+
+.button {
+    margin-left: 10px;
+    box-sizing: border-box;
+    background-color: $yellow;
+    border: 2px solid $yellow;
+    color: $blue;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: 'SUITE-Regular';
+    font-weight: bold;
+    font-size: 0.9rem;
+
+    &:hover {
+        border: 2px solid $yellow;
+        background-color: transparent;
+        color : $yellow;
+    }
+}
+
+.input {
+    margin-bottom: 20px;
+}
