@@ -158,11 +158,11 @@ export default function Home() {
                     {
                         searchList && 
                         searchList.map((book) =>
-                        <li key={book.id}>
+                        <li key={book.id} className={`${style.searchlist} br-2`}>
                             <div>
                                 {
                                     book.done ?
-                                        <h3>완료</h3>
+                                        <h3>읽기 완료</h3>
                                         : <h3>읽는 중</h3>}
                                 <h3>{book.title}</h3>
                                 <h4>{book.writer}</h4>
