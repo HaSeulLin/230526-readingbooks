@@ -30,7 +30,7 @@ li {
     justify-content: center;
 }
 
-.addbtn, .searchbtn {
+.addbtn {
     box-sizing: border-box;
     background-color: $yellow;
     color : $blue;
@@ -53,9 +53,21 @@ li {
     padding: 10px 0;
 }
 
+.searchul {
+    border-bottom: 1px solid $grey;
+
+}
+
 .searchlist {
-    border: 1px solid $grey;
     text-align: center;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.searchlist>div {
+    display: flex;
 }
 
 .booktag {
@@ -64,12 +76,10 @@ li {
 }
 
 .xbutton {
+    cursor: pointer;
+    background-color: transparent;
     border: none;
     color : $blue;
-    &:hover {
-        border: none;
-        background-color: transparent;
-    }
 }
 
 .book {
@@ -98,3 +108,40 @@ li {
     color : #505050;
 }
 
+.modal {
+    height: 100%; width:40vw;
+    min-width:500px;
+    background-color: $yellow;
+}
+
+
+.bluebtn, .redbtn {
+    width: 20px; height: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    &::after {
+        content: "";
+        background-color: $blue;
+        border: 1px solid $blue;
+        border-radius: 500%;
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        left: 0;
+        top: 3px;
+    }
+}
+
+.redbtn {
+    &::after {
+        content: "";
+        background-color: $red;
+        border: 1px solid $red;
+    }
+}
+
+.onbtn {
+    border: 2px solid $yellow;
+}
